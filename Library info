@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include <string.h>
+int main()
+{
+    struct book
+    {
+        char name[10] ; 
+        float price ;
+        int page ;
+        char author[50];
+    };
+    
+    struct book b[3] ;
+    
+    printf("Enter details of the books : \n");
+
+    for(int i=0;i<3;i++)
+    {
+        printf("\nName :\t");
+        scanf("%s", b[i].name);
+        printf("\nPrice :\t");
+        scanf("%f", &b[i].price);
+        printf("\nPage:\t");
+        scanf("%d", &b[i].page);
+        printf("\nAuthor:\t");
+        scanf("%s", b[i].author);
+    }
+    
+    printf("\nThe details you've entered are :\n");
+    
+  for (int i=0; i<3 ; i++)
+  {
+      printf("\nName :%s\t", b[i].name);
+      printf("\nPrice :%f\t", b[i].price);
+      printf("\nPage :%d\t", b[i].page);
+      printf("\nAuthor :%s", b[i].author);
+  }
+    return 0;
+}
