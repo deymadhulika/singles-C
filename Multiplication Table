@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int num , c , mul ;
+    
+    printf("Enter the number to calculate table : ");
+    scanf("%d",&num);
+
+    printf("The table of %d is :\n",num);
+    
+    for (c=1 ; c<=10 ;c++)
+    {
+        mul = num*c ;
+        
+        printf("%d X %d = %d\n", num, c, mul);
+    }
+    
+    return 0;
+}
