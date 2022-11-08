@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+// Macro definition
+#define F(X) (3*x*x*x+2*x*x+x)
+
+int main()
+{
+    int x;
+    
+    printf("Enter value of x : ");
+    scanf("%d",&x);
+ 
+   printf("\nThe value of the function is %d", F(X));
+ 
+    return 0;
+}
