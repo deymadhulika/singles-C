@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int term, c, mul ;
+    printf("Enter the term number : ");
+    scanf("%d",&term);
+    
+    for(c=1; c<=term; c++)
+    {
+        mul = c*c*c ;
+        printf("\nThe cube of number %d is : %d",c,mul);
+    }
+    return 0 ;
+}
